@@ -1,0 +1,11 @@
+traffic_control.c:4:6:setAllLeds	8	static
+traffic_control.c:14:6:blinkingRED	8	static
+traffic_control.c:23:6:blinkingYELLOW	8	static
+traffic_control.c:32:6:blinkingGREEN	8	static
+traffic_control.c:42:6:offAllLeds	8	static
+traffic_control.c:52:6:setRed1	8	static
+traffic_control.c:57:6:setYellow1	8	static
+traffic_control.c:62:6:setGreen1	8	static
+traffic_control.c:68:6:setRed2	8	static
+traffic_control.c:73:6:setYellow2	8	static
+traffic_control.c:78:6:setGreen2	8	static
