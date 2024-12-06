@@ -98,7 +98,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   SCH_Init();
-  initValues();
   SCH_Add_Task(modeRun,0,50);
   while (1)
   {

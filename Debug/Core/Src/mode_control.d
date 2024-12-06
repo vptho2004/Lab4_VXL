@@ -25,7 +25,7 @@ Core/Src/mode_control.o: ../Core/Src/mode_control.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/button.h ../Core/Inc/traffic_control.h \
- ../Core/Inc/mode_control.h ../Core/Inc/7seg.h
+ ../Core/Inc/mode_control.h ../Core/Inc/7seg.h ../Core/Inc/global.h
 
 ../Core/Inc/mode_control.h:
 
@@ -88,3 +88,5 @@ Core/Src/mode_control.o: ../Core/Src/mode_control.c \
 ../Core/Inc/mode_control.h:
 
 ../Core/Inc/7seg.h:
+
+../Core/Inc/global.h:

@@ -1,11 +1,12 @@
 #include "mode_control.h"
-
+#include "global.h"
 int counter;
 int temp;
 
 void modeRun(){
 	switch(mode){
 	case INIT:
+		initValues();
 		counter = 2;
 		mode = MODE1;
 		break;

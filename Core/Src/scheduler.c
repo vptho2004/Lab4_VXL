@@ -48,6 +48,5 @@ void SCH_Dispatch_Tasks(void){
 					SCH_tasks_G[i].RunMe--;
 					(*SCH_tasks_G[i].pTask)();
 				}
-				//delete task out of SCH_tasks_G
 		}
 }
