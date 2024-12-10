@@ -1,14 +1,13 @@
 #include "scheduler.h"
 
 unsigned char current_index_task = 0;
-
 unsigned char SCH_Delete_Task(const unsigned char TASK_INDEX){
 	unsigned char Return_code ;
 	SCH_tasks_G [TASK_INDEX].pTask = 0x0000 ;
 	SCH_tasks_G [TASK_INDEX].Delay = 0;
 	SCH_tasks_G [TASK_INDEX].Period = 0;
 	SCH_tasks_G [TASK_INDEX].RunMe = 0;
-//	current_index_task--;
+	current_index_task--;
 	return Return_code ; // return status
 }
 void SCH_Init(void){
@@ -47,6 +46,8 @@ void SCH_Dispatch_Tasks(void){
 				if(SCH_tasks_G[i].RunMe > 0){
 					SCH_tasks_G[i].RunMe--;
 					(*SCH_tasks_G[i].pTask)();
+					if(SCH_tasks_G[i].Period == 0)
+						SCH_Delete_Task(i);
 				}
 		}
 }
